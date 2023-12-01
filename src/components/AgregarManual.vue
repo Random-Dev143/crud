@@ -97,7 +97,7 @@
                     formData.append('entrada', this.persona.entrada);
                     formData.append('salida', this.persona.salida);
 
-                    const response = await fetch('http://127.0.0.1:5000/registros', {
+                    const response = await fetch('http://facundorua.pythonanywhere.com/registros', {
                         method: 'POST',
                         body: formData,
                     });
