@@ -1,15 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div id="app" class="container">
+      <div class="w-auto">
+        <h1>Registros</h1>
+      </div>
+      <div class="row">
+        <agregar-manual/>
+        <tabla-personas/>
+      </div>
+    </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TablaPersonas from './components/TablaPersonas.vue';
+import AgregarManual from './components/AgregarManual.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    TablaPersonas,
+    AgregarManual,
   }
 }
 </script>
