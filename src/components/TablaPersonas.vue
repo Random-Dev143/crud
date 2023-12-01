@@ -126,7 +126,7 @@
         data(){
             return{
                 
-                url:'http://facundorua.pythonanywhere.com/registros',
+                url:'https://facundorua.pythonanywhere.com/registros',
                 personas:[],
                 cargando: true,
                 error: false,
@@ -191,7 +191,7 @@
             async eliminarPersona(id){
                 
                 try {
-                    const response = await fetch(`http://facundorua.pythonanywhere.com/registros/${id}}`, {
+                    const response = await fetch(`https://facundorua.pythonanywhere.com/registros/${id}}`, {
                         method: 'DELETE',
                     });
                     if (response.ok){
